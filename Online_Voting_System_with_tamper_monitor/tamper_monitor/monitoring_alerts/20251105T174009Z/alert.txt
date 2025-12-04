@@ -1,0 +1,44 @@
+[20251105T174009Z] ALERT: Unauthorized database table modification detected!
+
+--- previous_db
++++ current_db
+@@ -85,7 +85,7 @@
+     },
+     {
+       "name": "Rahad",
+-      "email": "rahad@gmail.com",
++      "email": "rahad2101@cseku.ac.bd",
+       "password_hash": "pbkdf2_sha256$1000000$dMWszQWOQ8AoifI9zBLW6C$tCUNdvpfJA3sNK79Ge4t6LpG9zPy5gTOxa8BOqBoSAE=",
+       "voter_image": "voter_images/IMG_20240228_114842.jpg",
+       "is_admin": 0,
+@@ -94,7 +94,7 @@
+     },
+     {
+       "name": "Redwan",
+-      "email": "redwan@gmail.com",
++      "email": "redwan2107@cseku.ac.bd",
+       "password_hash": "pbkdf2_sha256$1000000$KYpoMF5suRMG9PXydCyFIp$KtJa8nIAzPXY0W6V/6c3/X+ZcPa54nqoc/mlx2HrTQk=",
+       "voter_image": "voter_images/IMG-20250831-WA0122.jpg",
+       "is_admin": 0,
+@@ -120,8 +120,8 @@
+       "voter_id": 7
+     },
+     {
+-      "name": "Arif",
+-      "email": "arif@gmail.com",
++      "name": "partho",
++      "email": "partho2102@cseku.ac.bd",
+       "password_hash": "pbkdf2_sha256$1000000$KYpoMF5suRMG9PXydCyFIp$KtJa8nIAzPXY0W6V/6c3/X+ZcPa54nqoc/mlx2HrTQk=",
+       "voter_image": "voter_images/WhatsApp_Image_2022-12-29_at_12.24.45_AM.jpeg",
+       "is_admin": 0,
+@@ -129,8 +129,8 @@
+       "voter_id": 8
+     },
+     {
+-      "name": "Asif",
+-      "email": "asif@gmail.com",
++      "name": "jahidul",
++      "email": "jahidul2129@cseku.ac.bd",
+       "password_hash": "pbkdf2_sha256$1000000$KYpoMF5suRMG9PXydCyFIp$KtJa8nIAzPXY0W6V/6c3/X+ZcPa54nqoc/mlx2HrTQk=",
+       "voter_image": "voter_images/WhatsApp_Image_2022-12-29_at_12.24.45_AM.jpeg",
+       "is_admin": 0,

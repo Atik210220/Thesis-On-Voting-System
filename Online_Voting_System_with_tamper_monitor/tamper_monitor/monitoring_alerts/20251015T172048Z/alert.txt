@@ -1,0 +1,20 @@
+[20251015T172048Z] ALERT: Unauthorized database table modification detected!
+
+--- previous_db
++++ current_db
+@@ -53,15 +53,6 @@
+       "voter_id": 4,
+       "previous_vote_hash": "17ca32b04cfc72e35a56f61b174b33db254d3290210d5aae4aaa6f95d6cd91c7",
+       "vote_hash": "a9a7eb4bb25f5f43666b56061935a6b1cf0dccbab6b961f4b83042059736379a"
+-    },
+-    {
+-      "vote_id": 7,
+-      "timestamp": "2025-10-15T10:25:31.915807Z",
+-      "candidate_id": 3,
+-      "position_id": 4,
+-      "voter_id": 4,
+-      "previous_vote_hash": "a9a7eb4bb25f5f43666b56061935a6b1cf0dccbab6b961f4b83042059736379a",
+-      "vote_hash": "b5592b6564d1e12d5041da96e80fa03b9052ded4b27035a0ac81fc8d5157d058"
+     }
+   ],
+   "voters": [

@@ -1,0 +1,13 @@
+[20251105T181129Z] ALERT: Unauthorized database table modification detected!
+
+--- previous_db
++++ current_db
+@@ -21,7 +21,7 @@
+     {
+       "vote_id": 3,
+       "timestamp": "2025-10-15T10:14:41.339444Z",
+-      "candidate_id": 1,
++      "candidate_id": 3,
+       "position_id": 1,
+       "voter_id": 5,
+       "previous_vote_hash": "82f4d158172615501a748e7715abefcab6b75e8c148208f30ab51fe9c8d37321",

@@ -1,0 +1,146 @@
+{
+  "last_snapshot": {
+    "votes": [
+      {
+        "vote_id": 1,
+        "timestamp": "2025-10-15T10:14:23.054512Z",
+        "candidate_id": 3,
+        "position_id": 4,
+        "voter_id": 9,
+        "previous_vote_hash": "",
+        "vote_hash": "c1389bf0c64b53950d7f3f331f9d424a7a87cd4074b2622512c3e4a5d0b5ce4b"
+      },
+      {
+        "vote_id": 2,
+        "timestamp": "2025-10-15T10:14:25.113915Z",
+        "candidate_id": 1,
+        "position_id": 1,
+        "voter_id": 9,
+        "previous_vote_hash": "c1389bf0c64b53950d7f3f331f9d424a7a87cd4074b2622512c3e4a5d0b5ce4b",
+        "vote_hash": "82f4d158172615501a748e7715abefcab6b75e8c148208f30ab51fe9c8d37321"
+      },
+      {
+        "vote_id": 3,
+        "timestamp": "2025-10-15T10:14:41.339444Z",
+        "candidate_id": 3,
+        "position_id": 1,
+        "voter_id": 5,
+        "previous_vote_hash": "82f4d158172615501a748e7715abefcab6b75e8c148208f30ab51fe9c8d37321",
+        "vote_hash": "63773d6ae41cc9a21d944de2af08d3f7b22d55b4c7e6c0b94f28e0326eb6d291"
+      },
+      {
+        "vote_id": 4,
+        "timestamp": "2025-10-15T10:14:58.857734Z",
+        "candidate_id": 3,
+        "position_id": 4,
+        "voter_id": 8,
+        "previous_vote_hash": "63773d6ae41cc9a21d944de2af08d3f7b22d55b4c7e6c0b94f28e0326eb6d291",
+        "vote_hash": "10cf1add46c0b35357a9271ce7687280041491106d04ddc0487dfd8aa84962f8"
+      },
+      {
+        "vote_id": 5,
+        "timestamp": "2025-10-15T10:15:06.489425Z",
+        "candidate_id": 4,
+        "position_id": 1,
+        "voter_id": 8,
+        "previous_vote_hash": "10cf1add46c0b35357a9271ce7687280041491106d04ddc0487dfd8aa84962f8",
+        "vote_hash": "17ca32b04cfc72e35a56f61b174b33db254d3290210d5aae4aaa6f95d6cd91c7"
+      },
+      {
+        "vote_id": 6,
+        "timestamp": "2025-10-15T10:25:24.433878Z",
+        "candidate_id": 2,
+        "position_id": 1,
+        "voter_id": 4,
+        "previous_vote_hash": "17ca32b04cfc72e35a56f61b174b33db254d3290210d5aae4aaa6f95d6cd91c7",
+        "vote_hash": "a9a7eb4bb25f5f43666b56061935a6b1cf0dccbab6b961f4b83042059736379a"
+      }
+    ],
+    "voters": [
+      {
+        "name": "anam",
+        "email": "anamul2119@cseku.ac.bd",
+        "password_hash": "pbkdf2_sha256$1000000$xfffLrDZ9dvBLgaEz4hkEi$SYsOcvSr3JoCjM2u8xHYKRKHhhUvP7hitmOu3iH3kFs=",
+        "voter_image": "voter_images/election.jpeg",
+        "is_admin": 0,
+        "registration_date": "2025-10-06T06:33:37.386218Z",
+        "voter_id": 1
+      },
+      {
+        "name": "Atik",
+        "email": "atik2120@cseku.ac.bd",
+        "password_hash": "pbkdf2_sha256$1000000$gSPmsmLNbh8Z13IaX4TNFC$ydeNk/Dq3HRG+YF1uqMnsRXsVQq82XsQjBtJHhRhUoc=",
+        "voter_image": "voter_images/IMG-20250830-WA0196.jpg",
+        "is_admin": 0,
+        "registration_date": "2025-10-07T06:11:03.836714Z",
+        "voter_id": 2
+      },
+      {
+        "name": "admin",
+        "email": "admin@gmail.com",
+        "password_hash": "pbkdf2_sha256$1000000$vz4vkutE5ImwzZq5PzFvvh$/swPvR0948hgBbxe/AJXDQlbmRNAE4atFxQXDWTPQFM=",
+        "voter_image": "voter_images/pexels-andreas-barth-89047-1131774.jpg",
+        "is_admin": 1,
+        "registration_date": "2025-09-16T04:41:38.790801Z",
+        "voter_id": 3
+      },
+      {
+        "name": "Rahad",
+        "email": "rahad2101@cseku.ac.bd",
+        "password_hash": "pbkdf2_sha256$1000000$dMWszQWOQ8AoifI9zBLW6C$tCUNdvpfJA3sNK79Ge4t6LpG9zPy5gTOxa8BOqBoSAE=",
+        "voter_image": "voter_images/IMG_20240228_114842.jpg",
+        "is_admin": 0,
+        "registration_date": "2025-10-07T06:21:26.759737Z",
+        "voter_id": 4
+      },
+      {
+        "name": "Redwan",
+        "email": "redwan2107@cseku.ac.bd",
+        "password_hash": "pbkdf2_sha256$1000000$KYpoMF5suRMG9PXydCyFIp$KtJa8nIAzPXY0W6V/6c3/X+ZcPa54nqoc/mlx2HrTQk=",
+        "voter_image": "voter_images/IMG-20250831-WA0122.jpg",
+        "is_admin": 0,
+        "registration_date": "2025-10-07T06:23:06.956723Z",
+        "voter_id": 5
+      },
+      {
+        "name": "Anjir Hossain",
+        "email": "mdanjir3734@gmail.com",
+        "password_hash": "pbkdf2_sha256$1000000$KYpoMF5suRMG9PXydCyFIp$KtJa8nIAzPXY0W6V/6c3/X+ZcPa54nqoc/mlx2HrTQk=",
+        "voter_image": "voter_images/WhatsApp_Image_2022-12-29_at_12.24.45_AM.jpeg",
+        "is_admin": 0,
+        "registration_date": "2025-09-15T07:50:17.119874Z",
+        "voter_id": 6
+      },
+      {
+        "name": "alam",
+        "email": "alam@gmail.com",
+        "password_hash": "pbkdf2_sha256$1000000$KYpoMF5suRMG9PXydCyFIp$KtJa8nIAzPXY0W6V/6c3/X+ZcPa54nqoc/mlx2HrTQk=",
+        "voter_image": "voter_images/WhatsApp_Image_2022-12-29_at_12.24.45_AM.jpeg",
+        "is_admin": 0,
+        "registration_date": "2025-09-15T07:50:17.119874Z",
+        "voter_id": 7
+      },
+      {
+        "name": "partho",
+        "email": "partho2102@cseku.ac.bd",
+        "password_hash": "pbkdf2_sha256$1000000$KYpoMF5suRMG9PXydCyFIp$KtJa8nIAzPXY0W6V/6c3/X+ZcPa54nqoc/mlx2HrTQk=",
+        "voter_image": "voter_images/WhatsApp_Image_2022-12-29_at_12.24.45_AM.jpeg",
+        "is_admin": 0,
+        "registration_date": "2025-09-15T07:50:17.119874Z",
+        "voter_id": 8
+      },
+      {
+        "name": "jahidul",
+        "email": "jahidul2129@cseku.ac.bd",
+        "password_hash": "pbkdf2_sha256$1000000$KYpoMF5suRMG9PXydCyFIp$KtJa8nIAzPXY0W6V/6c3/X+ZcPa54nqoc/mlx2HrTQk=",
+        "voter_image": "voter_images/WhatsApp_Image_2022-12-29_at_12.24.45_AM.jpeg",
+        "is_admin": 0,
+        "registration_date": "2025-09-15T07:50:17.119874Z",
+        "voter_id": 9
+      }
+    ]
+  },
+  "last_hash": "d89f892461b7fbff7c0b5bb4d8d3bddce6e0d09603e6d86ed8e700213d56858f",
+  "last_binlog_hash": "83591534636f7a7cb46423255a5c6fb6d24e9266e24dc50ec57cfe3b4f7b3c85",
+  "last_checked": "2025-11-07T12:38:37.258391Z"
+}

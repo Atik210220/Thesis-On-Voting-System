@@ -1,0 +1,10 @@
+{
+  "last_hash": "ad5a56c7f07e384643b4ca0f83ab17aafcddee20f3a5d830645732c0d136f99d",
+  "last_checked": "2025-10-15T16:49:21.409392",
+  "meta": {
+    "path": "/var/lib/mysql/mysql-bin.000001",
+    "size": 351,
+    "dump_time": "2025-10-15T16:27:31.664244Z"
+  },
+  "last_snapshot_path": "/mnt/f62be7ce-68d3-4396-b43d-3c8da1f87155/Online_Voting_System_with_tamper_monitor/Online_Voting_System/monitoring_alerts/20251015T162731Z/dump.sql"
+}

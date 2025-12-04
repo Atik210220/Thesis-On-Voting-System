@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard - Online Voting System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body style="background-color: #f8f9fa">
+    <!-- ✅ Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="{% url 'dashboard' %}"
+          >🗳️ Online Voting System</a
+        >
+        <div class="d-flex">
+          <a href="{% url 'logout' %}" class="btn btn-outline-light">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ✅ Dashboard Content -->
+    <main class="container py-5">
+      <div class="text-center mb-5">
+        <h1 class="fw-bold">Welcome, {{ voter.name }} 👋</h1>
+        <p class="text-muted">Here are the elections you are registered in.</p>
+      </div>
+
+      <!-- Registered Elections Section -->
+<div class="text-center mb-4">
+    <h2 class="fw-bold">Your Registered Elections</h2>
+    <p class="text-muted">Elections you are already registered in.</p>
+</div>
+
+<div class="row mb-5">
+    {% for election in registered_elections %}
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">{{ election.election_name }}</h5>
+                        {% if election.description %}
+                            <p class="card-text">{{ election.description|truncatewords:20 }}</p>
+                        {% endif %}
+                        <p class="text-muted small">
+                            <i class="far fa-calendar-alt"></i>
+                            {{ election.start_date|date:"M d, Y H:i" }} – {{ election.end_date|date:"M d, Y H:i" }}
+                        </p>
+                    </div>
+                    <a href="{% url 'registered_election_detail' election.election_id %}" class="btn btn-success w-100 mt-3">
+                        Enter Election
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <div class="col-12 text-center">
+            <div class="alert alert-info shadow-sm">
+                You are not registered in any elections yet.
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+      <!-- Upcoming Elections Section -->
+      <hr class="my-5" />
+
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Upcoming Elections</h2>
+        <p class="text-muted">
+          Request registration to participate in these elections.
+        </p>
+      </div>
+
+      <div class="row">
+        {% for election in upcoming_elections %}
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">{{ election.election_name }}</h5>
+              {% if election.description %}
+              <p class="card-text">
+                {{ election.description|truncatewords:20 }}
+              </p>
+              {% endif %}
+              <p class="text-muted small">
+                <i class="far fa-calendar-alt"></i>
+                {{ election.start_date|date:"M d, Y H:i" }} – {{
+                election.end_date|date:"M d, Y H:i" }}
+              </p>
+              <form
+                method="post"
+                action="{% url 'request_registration' election_id=election.election_id %}"
+              >
+                {% csrf_token %}
+                <button type="submit" class="btn btn-warning w-100">
+                  Request Registration
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center">
+          <div class="alert alert-info shadow-sm">
+            No upcoming elections available for registration.
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </main>
+
+    <!-- ✅ Footer -->
+    <footer class="bg-dark text-light text-center py-3 mt-auto">
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2025 Online Voting System. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      console.log("Logged in voter_id:", "{{ voter.voter_id }}");
+    </script>
+  </body>
+</html>

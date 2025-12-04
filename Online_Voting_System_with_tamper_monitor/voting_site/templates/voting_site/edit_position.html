@@ -1,0 +1,8 @@
+<h2>Edit Position: {{ position.position_name }}</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a href="{% url 'manage_election' position.election.election_id %}" class="btn btn-secondary">Cancel</a>
+</form>
